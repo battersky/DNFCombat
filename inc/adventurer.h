@@ -1,6 +1,4 @@
-#include <iostream>
 #include <string>
-using namespace std;
 
 class Adventurer {
 
@@ -22,9 +20,14 @@ class Adventurer {
             int currentSP = 100, int damage = 20, int exp = 0, int level = 1, 
             int dragNum = 5, string name);
             
-        virtual void makeDecision();
+        virtual void makeDecision() = 0;
         virtual void attack(Adventurer*);
-        virtual void rest();
-        virtual void takeDrug();
+        virtual void rest() = 0;
+        virtual void takeDrug() = 0;
         virtual void injured(int HP);
+    protected:
+        virtual void deading() = 0;
+
+    public:
+        virtual void dump();
 }
