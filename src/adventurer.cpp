@@ -2,9 +2,9 @@
 #include "adventurer.h"
 using namespace std;
 
-Adventurer::Adventurer(int maxHP = 100, int currentHP = 100, int maxSP = 100, 
+Adventurer::Adventurer(string name, int maxHP = 100, int currentHP = 100, int maxSP = 100,
             int currentSP = 100, int damage = 20, int exp = 0, int level = 1, 
-            int dragNum = 5, string name)
+            int dragNum = 5)
 {
     mMaxHP = maxHP;
     mCurrentHP = currentHP;

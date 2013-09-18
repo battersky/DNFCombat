@@ -16,9 +16,10 @@ class Adventurer {
         int mDragNum;
         
     public:
-        Adventurer(int maxHP = 100, int currentHP = 100, int maxSP = 100, 
+        //name should be a reference?
+        Adventurer(string name, int maxHP = 100, int currentHP = 100, int maxSP = 100,
             int currentSP = 100, int damage = 20, int exp = 0, int level = 1, 
-            int dragNum = 5, string name);
+            int dragNum = 5);
             
         virtual void makeDecision() = 0;
         virtual void attack(Adventurer*);
