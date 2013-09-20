@@ -2,18 +2,61 @@
 #include "adventurer.h"
 using namespace std;
 
-Adventurer::Adventurer(string name, int maxHP = 100, int currentHP = 100, int maxSP = 100,
-            int currentSP = 100, int damage = 20, int exp = 0, int level = 1, 
-            int dragNum = 5)
+Adventurer::Adventurer(string name)
+{
+    setName(name);
+    setMaxHP(100);
+    setCurrentHP(100);
+    setMaxSP(100);
+    setCurrentSP(100);
+    setDamage(20);
+    setExp(0);
+    setLevel(1);
+    setDragNumber(5);
+}
+
+void Adventurer::setName(String& name)
+{
+    mName = name;
+}
+
+void Adventurer::setMaxHP(int maxHP)
 {
     mMaxHP = maxHP;
+}
+
+void Adventurer::setCurrentHP(int currentHP)
+{
     mCurrentHP = currentHP;
+}
+
+void Adventurer::setMaxSP(int maxSP)
+{
     mMaxSP = maxSP;
+}
+
+void Adventurer::setCurrentSP(int currentSP)
+{
     mCurrentSP = currentSP;
+}
+
+void Adventurer::setDamage(int damage)
+{
     mDamage = damage;
+}
+
+void Adventurer::setExp(int exp)
+{
     mExp = exp;
+}
+
+void Adventurer::setLevel(int level)
+{
     mLevel = level;
-    mName = name;
+}
+
+void Adventurer::setDragNumber(int dragNum)
+{
     mDragNum = dragNum;
 }
 
