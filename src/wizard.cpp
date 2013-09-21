@@ -15,3 +15,20 @@ void Wizard::setCurrentMP(int currentMP)
 {
     mCurrentMP = currentMP;
 }
+
+void Wizard::deading()
+{
+}
+
+void Wizard::makeDesicison()
+{
+
+}
+
+void Wizard::reset()
+{
+}
+
+void Wizard::takeDrug()
+{
+}

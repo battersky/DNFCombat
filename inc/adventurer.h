@@ -17,7 +17,7 @@ class Adventurer {
         
     public:
         //name should be a reference?
-        Adventurer(string name);
+        Adventurer(string& name);
             
         virtual void makeDecision() = 0;
         virtual void attack(Adventurer*);
