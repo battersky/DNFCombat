@@ -8,7 +8,12 @@ class MasterWizard : public Adventurer
         int mMaxNP;
         int mCurrentNP;
     public:
-        void setMaxNP(int maxNP);
-        void setCurrentNP(int currentNP);
-    
+        virtual void setMaxNP(int maxNP);
+        virtual void setCurrentNP(int currentNP);
+    public:
+        void makeDecision();
+        void reset();
+        void takeDrug();
+    protected:
+        void deading();
 };

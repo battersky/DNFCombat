@@ -1,4 +1,4 @@
-#include "adventurer.h"
+#include "Adventurer.h"
 
 class Wizard : public Adventurer
 {
