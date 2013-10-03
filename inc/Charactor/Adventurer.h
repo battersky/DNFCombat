@@ -1,22 +1,19 @@
+#ifndef __ADVENTURER_H_
+#define __ADVENTURER_H_
 #include <string>
 
-class Adventurer {
+class Adventurer : public Creature
+{
 
     protected:
-        int mMaxHP;
-        int mCurrentHP;
-        
         int mMaxSP;
         int mCurrentSP;
         
         int mDamage;
         int mExp;
-        int mLevel;
-        string mName;
         int mDragNum;
         
     public:
-        //name should be a reference?
         Adventurer(string& name);
             
         virtual void makeDecision() = 0;
@@ -25,14 +22,10 @@ class Adventurer {
         virtual void takeDrug() = 0;
         virtual void injured(int HP);
     public:
-        virtual void setName(String& name);
-        virtual void setMaxHP(int maxHP);
-        virtual void setCurrentHP(int currentHP);
         virtual void setMaxSP(int maxSP);
         virtual void setCurrentSP(int currentSP);
         virtual void setDamage(int damage);
         virtual void setExp(int exp);
-        virtual void setLevel(int level);
         virtual void setDragNumber(int dragNum);
     protected:
         virtual void deading() = 0;
@@ -40,3 +33,5 @@ class Adventurer {
     public:
         virtual void dump();
 };
+
+#endif //Adventurer.h
