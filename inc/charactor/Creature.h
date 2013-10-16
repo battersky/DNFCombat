@@ -11,7 +11,7 @@ class Creature
         int mLevel;
 
 	public:
-		Creature(std::string& name);
+		Creature(string& name);
 		virtual void setMutable(bool isMutable);
         bool isMutable();
         virtual void setName(String& name);
