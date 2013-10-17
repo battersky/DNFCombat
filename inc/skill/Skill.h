@@ -7,7 +7,7 @@ class Creature;
 class Skill
 {
     public:
-        Skill(string& name, string &description, int level);
+        Skill(string& name, string& description, int level);
 
         virtual void setName(string& name);
         virtual void setDescription(string& description);
@@ -18,7 +18,7 @@ class Skill
         int getLevel() const;
 
     private:
-        virtual void init(int level) = 0;
+        virtual void init() = 0;
     public:
         virtual void befall(Creature* creature) = 0;
     protected:

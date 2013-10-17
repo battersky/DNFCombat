@@ -39,5 +39,3 @@ string& Skill::getLevel()
     return mLevel;
 }
 
-
-
