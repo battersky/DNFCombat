@@ -9,7 +9,7 @@ class HealSkill : public Skill
         HealSkill(int level);
     protected:
         int mMaxLevel;
-        int thehold;
+        int mThreshold;
 };
 
 #endif //Heal.h

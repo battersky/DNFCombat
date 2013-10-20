@@ -19,6 +19,10 @@ class Creature
         virtual void setMaxHP(int maxHP);
         virtual void setLevel(int level);
         //virtual bool hasSkill(); skill should be invoked later
+    public:
+        virtual int getCurrentHP() const;        
+        virtual int getMaxHP() const;
+        virtual int getLevel() const;
 };
 
 #endif //Creature.h
