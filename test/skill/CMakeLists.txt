@@ -1,0 +1,4 @@
+PROJECT(SKILLTEST)
+SET(SRC_LIST skill_test.cpp)
+INCLUDE_DIRECTORIES(../../inc/)
+ADD_EXECUTABLE(skill_test ${SRC_LIST})
