@@ -3,7 +3,9 @@
 
 enum ItemType
 {
-    
+    WEAPON,
+    DRUG,
+    ARMOR,
 };
 
 
