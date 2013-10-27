@@ -1,7 +1,6 @@
 #include "skill/Skill.h"
-#include "creature/Creature.h"
 
-Skill::Skill(string& name, string& description, int level)
+Skill::Skill(std::string& name, std::string& description, int level)
 {
     mName = name;
     mDescription = description;
@@ -9,12 +8,12 @@ Skill::Skill(string& name, string& description, int level)
     init(mLevel);
 }
 
-void Skill::setName(string& name)
+void Skill::setName(std::string& name)
 {
     mName = name;
 }
 
-void Skill::setDescription(string& description)
+void Skill::setDescription(std::string& description)
 {
     mDescription = description;
 }
@@ -24,17 +23,17 @@ void Skill::setLevel(int level)
     mLevel = level;
 }
 
-string& Skill::getName()
+std::string& Skill::getName()
 {
     return mName;
 }
 
-string& Skill::getDescription()
+std::string& Skill::getDescription()
 {
     return mDescription;
 }
 
-string& Skill::getLevel()
+std::string& Skill::getLevel()
 {
     return mLevel;
 }

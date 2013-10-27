@@ -1,4 +1,5 @@
 PROJECT(SKILLTEST)
-SET(SRC_LIST skill_test.cpp)
+SET(SRC_LIST skill_test.cpp skill/Skill.cpp skill/HealSkill.cpp)
 INCLUDE_DIRECTORIES(../../inc/)
+#ADD_SUBDIRECTORY(../../src/)
 ADD_EXECUTABLE(skill_test ${SRC_LIST})

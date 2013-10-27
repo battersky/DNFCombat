@@ -4,17 +4,17 @@
 class Creature
 {
 	protected:
-		string& mName;
+        std::string& mName;
         int mMaxHP;
         int mCurrentHP;
 		bool mMutable;
         int mLevel;
 
 	public:
-		Creature(string& name);
+		Creature(std::string& name);
 		virtual void setMutable(bool isMutable);
         bool isMutable();
-        virtual void setName(String& name);
+        virtual void setName(std::string& name);
         virtual void setCurrentHP(int HP);
         virtual void setMaxHP(int maxHP);
         virtual void setLevel(int level);

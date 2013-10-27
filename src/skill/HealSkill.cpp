@@ -1,7 +1,7 @@
 #include "skill/HealSkill.h"
 #include "charactor/Creature.h"
 
-HealSkill::HealSkill(int level) : Skill("Heal", "Heal self or firendly creature", 0)
+HealSkill::HealSkill(int level) : Skill(HEALSKILL_NAME, HEALSKILL_NAME, level)
 {
 }
 
