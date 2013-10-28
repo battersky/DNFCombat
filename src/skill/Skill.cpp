@@ -1,19 +1,17 @@
 #include "skill/Skill.h"
 
-Skill::Skill(std::string& name, std::string& description, int level)
+Skill::Skill(const std::string& name, const std::string& description, int level) : mName(name), mDescription(description)
 {
-    mName = name;
-    mDescription = description;
     mLevel = level;
     init(mLevel);
 }
 
-void Skill::setName(std::string& name)
+void Skill::setName(const std::string& name)
 {
     mName = name;
 }
 
-void Skill::setDescription(std::string& description)
+void Skill::setDescription(const std::string& description)
 {
     mDescription = description;
 }
@@ -23,17 +21,17 @@ void Skill::setLevel(int level)
     mLevel = level;
 }
 
-std::string& Skill::getName()
+const std::string& Skill::getName()
 {
     return mName;
 }
 
-std::string& Skill::getDescription()
+const std::string& Skill::getDescription()
 {
     return mDescription;
 }
 
-std::string& Skill::getLevel()
+const std::string& Skill::getLevel()
 {
     return mLevel;
 }

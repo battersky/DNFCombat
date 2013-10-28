@@ -7,14 +7,14 @@ class Creature;
 class Skill
 {
     public:
-        Skill(std::string& name, std::string& description, int level);
-
-        virtual void setName(std::string& name);
-        virtual void setDescription(std::string& description);
+        Skill(const std::string& name, const std::string& description, int level);
+        
+        virtual void setName(const std::string& name);
+        virtual void setDescription(const std::string& description);
         virtual void setLevel(int level);
 
-        std::string& getName() const;
-        std::string& getDescription() const;
+        const std::string& getName() const;
+        const std::string& getDescription() const;
         int getLevel() const;
 
     protected:
@@ -22,8 +22,8 @@ class Skill
     public:
         virtual void befall(Creature* creature) = 0;
     protected:
-        std::string& mName;
-        std::string& mDescription;
+        const std::string& mName;
+        const std::string& mDescription;
         int mLevel;
 };
 
