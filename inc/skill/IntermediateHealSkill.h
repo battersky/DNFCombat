@@ -4,10 +4,9 @@
 
 class IntermediateHealSkill : public HealSkill
 {
-    void init()
-    {
-        mThreshold = 15;
-    }
+    //TO-DO a constructor should be here
+    protected:
+        void init();
 };
 
 #endif
