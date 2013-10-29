@@ -14,7 +14,7 @@ void HealSkill::befall(Creature* creature)
 {
     if (creature)
     {
-        creature->setCurrentHP(mThreshold * mMaxLevel);
+        creature->setCurrentHP(mThreshold * level);
     }
 }
 
