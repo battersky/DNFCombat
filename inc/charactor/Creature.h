@@ -3,17 +3,22 @@
 #include <string>
 class Creature
 {
-	protected:
-        std::string& mName;
+    protected:
+        const std::string& mName;
         int mMaxHP;
         int mCurrentHP;
-		bool mMutable;
+        bool mMutable;
         int mLevel;
 
-	public:
-		Creature(std::string& name);
-		virtual void setMutable(bool isMutable);
-        bool isMutable();
+    public:
+        Creature(const std::string& name);
+    public:
+        enum Mode {
+            GOD_MODE,
+            NORMAL_MODE
+        }
+        bool inGodMode();
+        void setMode(Mode mode);
         virtual void setName(std::string& name);
         virtual void setCurrentHP(int HP);
         virtual void setMaxHP(int maxHP);
