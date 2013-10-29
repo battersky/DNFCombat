@@ -9,8 +9,6 @@ class Skill
     public:
         Skill(const std::string& name, const std::string& description, int level);
         
-        virtual void setName(const std::string& name);
-        virtual void setDescription(const std::string& description);
         virtual void setLevel(int level);
 
         const std::string& getName() const;
