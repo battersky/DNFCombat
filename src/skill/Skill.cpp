@@ -1,5 +1,7 @@
 #include "skill/Skill.h"
 
+class Creature;
+
 Skill::Skill(const std::string& name, const std::string& description, int level) 
     : mName(name), mDescription(description)
 {
@@ -26,4 +28,6 @@ int Skill::getLevel() const
 {
     return mLevel;
 }
+
+virtual void befall(Creature* creature) = 0;
 
