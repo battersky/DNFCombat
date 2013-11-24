@@ -6,16 +6,6 @@ Skill::Skill(const std::string& name, const std::string& description, int level)
     init();
 }
 
-/*void Skill::setName(const std::string& name)
-{
-    mName = name;
-}
-
-void Skill::setDescription(const std::string& description)
-{
-    mDescription = description;
-}*/
-
 void Skill::setLevel(int level)
 {
     mLevel = level;
