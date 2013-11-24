@@ -1,6 +1,7 @@
 #include "skill/Skill.h"
 
-Skill::Skill(const std::string& name, const std::string& description, int level) : mName(name), mDescription(description)
+Skill::Skill(const std::string& name, const std::string& description, int level) 
+    : mName(name), mDescription(description)
 {
     mLevel = level;
     init();
