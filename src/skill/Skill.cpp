@@ -29,5 +29,3 @@ int Skill::getLevel() const
     return mLevel;
 }
 
-virtual void befall(Creature* creatures[], int size) = 0;
-

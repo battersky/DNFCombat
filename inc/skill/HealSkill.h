@@ -9,7 +9,7 @@ class HealSkill : public Skill
 {
     public:
         HealSkill(int level);
-        void befall(Creature* creature);
+        void befall(Creature* creatures[], int size);
     protected:
         void init();
     protected:

@@ -18,7 +18,7 @@ class Skill
     protected:
         virtual void init() = 0;
     public:
-        virtual void befall(Creature* creature) = 0;
+        virtual void befall(Creature* creatures[], int size) = 0;
     protected:
         const std::string& mName;
         const std::string& mDescription;

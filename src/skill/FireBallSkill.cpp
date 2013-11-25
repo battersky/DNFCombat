@@ -10,10 +10,11 @@ void FireBallSkill::init()
     mThreshold = 11;
 }
 
-void befall(Creature* creature)
+void befall(Creature* creatures[], int size)
 {
-    if (creature)
+    for(int i = 0; i < size; i ++)
     {
+        Creature* creature = creatures[i];
         creature->setCurrentHP(mThreshold * level);
     }
 }
